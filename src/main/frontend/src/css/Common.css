@@ -1,0 +1,93 @@
+body,html {
+    height: 100%
+}
+
+a {
+    cursor: pointer
+}
+
+blockquote,body,button,code,dd,div,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,input,legend,li,ol,p,pre,select,td,textarea,th,ul {
+    margin: 0;
+    padding: 0
+}
+
+fieldset,img {
+    border: 0
+}
+
+dl,li,menu,ol,ul {
+    list-style: none
+}
+
+blockquote,q {
+    quotes: none
+}
+
+blockquote:after,blockquote:before,q:after,q:before {
+    content: "";
+    content: none
+}
+
+button,input,select,textarea {
+    vertical-align: middle
+}
+
+input::-ms-clear {
+    display: none
+}
+
+button {
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none
+}
+
+body,button,input,select,td,textarea,th {
+    font-size: 13px;
+    line-height: 1.5;
+    font-family: Noto Sans DemiLight,AppleSDGothicNeo-Regular,Malgun Gothic,ë§‘ì€ ê³ ë”•,dotum,ë‹ì›€,sans-serif;
+    -webkit-font-smoothing: antialiased
+}
+
+a {
+    color: #333;
+    text-decoration: none
+}
+
+a:active,a:hover {
+    text-decoration: underline
+}
+
+a:active {
+    background-color: transparent
+}
+
+
+
+
+
+.ir_pm,.ir_wa {
+    display: block;
+    overflow: hidden
+}
+
+.ir_caption,.screen_out {
+    overflow: hidden;
+    line-height: 0;
+    text-indent: -9999px
+}
+
+.screen_out {
+    position: absolute;
+    width: 0;
+    height: 0
+}
+
+.show {
+    display: block
+}
+
+.hide {
+    display: none
+}
