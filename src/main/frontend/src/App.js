@@ -1,8 +1,8 @@
-import './css/Common.css';
-import './css/App.css';
-import './css/Top.css';
-import Navigation from './components/Navigation'
-import KakaoContent from './components/KakaoContent'
+import 'css/user/Common.css';
+import 'css/user/App.css';
+import 'css/user/Top.css';
+import Navigation from 'components/user/Navigation'
+import KakaoContent from 'components/user/KakaoContent'
 
 function App() {
   return (
