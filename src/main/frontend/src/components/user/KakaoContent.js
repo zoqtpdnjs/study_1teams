@@ -1,6 +1,6 @@
 import React from 'react'
-import MFeature from 'components/MFeature'
-import MArticle from 'components/MArticle'
+import MFeature from 'components/user/MFeature'
+import MArticle from 'components/user/MArticle'
 
 const KakaoContent = () => {
     return (
