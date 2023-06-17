@@ -46,8 +46,13 @@ button {
 body,button,input,select,td,textarea,th {
     font-size: 13px;
     line-height: 1.5;
-    font-family: Noto Sans DemiLight,AppleSDGothicNeo-Regular,Malgun Gothic,ë§‘ì€ ê³ ë”•,dotum,ë‹ì›€,sans-serif;
+    font-family: Noto Sans DemiLight,AppleSDGothicNeo-Regular,Malgun Gothic,맑은 고딕,dotum,돋움,sans-serif;
     -webkit-font-smoothing: antialiased
+}
+
+address,caption,cite,code,dfn,em,var {
+    font-style: normal;
+    font-weight: 400
 }
 
 a {
@@ -62,6 +67,11 @@ a:active,a:hover {
 a:active {
     background-color: transparent
 }
+
+button,input,select,textarea {
+    vertical-align: middle
+}
+
 
 
 
