@@ -4,7 +4,7 @@ import MArticle from 'components/user/MArticle'
 
 const KakaoContent = () => {
     return (
-        <div id="KakaoContent" role="main">
+        <div id="kakaoContent" role="main">
             <div id="cMain">
                 <MFeature />
                 <MArticle />

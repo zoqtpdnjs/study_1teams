@@ -1,5 +1,5 @@
 import React from 'react'
-import SwiperSlides from 'components/user/SwiperSlides'
+import SwiperSlides from 'components/user/mainContent/SwiperSlides'
 
 const MFeature = () => {
     return (

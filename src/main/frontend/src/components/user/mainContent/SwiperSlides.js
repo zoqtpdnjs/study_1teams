@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import SwiperSlideContent from 'components/user/SwiperSlideContent'
+import SwiperSlideContent from 'components/user/mainContent/SwiperSlideContent'
 
 
 // swiper

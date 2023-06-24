@@ -3,6 +3,7 @@ import 'css/user/App.css';
 import 'css/user/Top.css';
 import Navigation from 'components/user/Navigation'
 import KakaoContent from 'components/user/KakaoContent'
+import DaumFoot from 'components/user/DaumFoot'
 
 function App() {
   return (
@@ -10,6 +11,8 @@ function App() {
         <Navigation />
         <hr className="hide" />
         <KakaoContent />
+        <hr className="hide" />
+        <DaumFoot />
       </div>
   );
 }

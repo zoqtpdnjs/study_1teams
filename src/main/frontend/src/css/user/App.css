@@ -1,6 +1,6 @@
 #kakaoWrap {
     overflow: hidden;
-    /* position: relative; */
+    position: relative;
     min-width: 944px;
     min-height: 100%
 }
@@ -215,11 +215,6 @@
     opacity: 0
 }
 
-.img_common_tistory {
-    background-image: url(../../img/common_tistory.png);
-    background-size: 200px 350px
-}
-
 .info_tistory {
     position: absolute;
     top: 0;
@@ -296,4 +291,184 @@
     margin: 0 4px;
     vertical-align: middle
 }
+
+.img_top {
+    background-image: url(../../img/img_top.png);
+    background-size: 200px 200px
+}
+
+.btn_tistory_type4 {
+    position: absolute;
+    top: 50%;
+    margin: -30px 0 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgba(32,32,32,.4);
+    opacity: 0;
+    -webkit-transition: opacity .2s linear,background-color .1s linear;
+    -moz-transition: opacity .2s linear,background-color .1s linear;
+    transition: opacity .2s linear,background-color .1s linear
+}
+
+.btn_tistory_type4.btn_prev {
+    left: 30px
+}
+
+.btn_tistory_type4.btn_next {
+    right: 30px
+}
+
+.btn_tistory_type4 .ico_prev {
+    display: block;
+    width: 11px;
+    height: 20px;
+    margin: 0 26px 0 23px;
+    background-position: -120px 0
+}
+
+.btn_tistory_type4 .ico_next {
+    display: block;
+    width: 11px;
+    height: 20px;
+    margin: 0 23px 0 26px;
+    background-position: -140px 0
+}
+
+
 /* KakaoContent end*/
+
+/* DaumFoot start*/
+.footer_comm {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #f0f0f0;
+    text-align: center
+}
+
+.inner_foot {
+    overflow: hidden;
+    min-width: 1200px;
+    margin: 0 auto;
+    padding: 0 0 51px;
+    background-color: #fff
+}
+
+.inner_foot .cont_tistory {
+    padding: 40px 0 0 60px
+}
+
+.inner_foot .cont_tistory {
+    float: left;
+    padding: 59px 0 0 60px
+}
+
+.cont_tistory .txt_tistory {
+    width: 36px;
+    height: 36px;
+    background-position: -148px -180px
+}
+
+.desc_footer {
+    color: #909090;
+    font-size: 12px;
+    line-height: 1.5
+}
+
+.desc_footer em {
+    color: #000
+}
+
+.cont_tistory .desc_footer {
+    padding: 10px 0 0;
+    text-align: left
+}
+
+.cont_tistory .desc_footer {
+    padding: 12px 0 0
+}
+
+.search_tistory {
+    position: relative;
+    width: 119px;
+    height: 38px;
+    padding: 0 20px;
+    box-sizing: content-box;
+    border: 1px solid #ddd;
+    border-radius: 20px
+}
+
+.cont_tistory .search_tistory {
+    margin: 21px 0 0 -8px
+}
+
+.inp_text {
+    position: relative
+}
+
+.search_tistory .inp_text {
+    width: 104px;
+    margin-top: 9px
+}
+
+.inp_text input {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 13px;
+    color: #000;
+    border: none;
+    outline: 0;
+    background-color: transparent
+}
+
+.btn_search {
+    position: absolute;
+    top: 11px;
+    right: 20px;
+    width: 16px;
+    height: 16px;
+    background-position: -90px 0
+}
+
+.inner_foot .question_tistory {
+    float: right;
+    width: 736px;
+    padding: 55px 60px 0 0;
+    text-align: left
+}
+
+.question_tistory .wrap_question {
+    float: left;
+    width: 160px;
+    padding-left: 24px
+}
+
+.wrap_question .tit_question {
+    display: block;
+    font-size: 14px;
+    color: #000;
+    line-height: 1.5;
+    font-weight: 600;
+    font-family: Noto Sans Medium,AppleSDGothicNeo-Regular,Malgun Gothic,맑은 고딕,dotum,돋움,sans-serif
+}
+
+.list_question {
+    padding: 11px 0 0
+}
+
+.list_question li {
+    height: 30px;
+    font-weight: 600;
+}
+
+.list_question .link_txt {
+    display: block;
+    font-size: 13px;
+    color: #777;
+    line-height: 30px
+}
+
+
+/* DaumFoot end*/
