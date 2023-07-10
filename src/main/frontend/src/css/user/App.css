@@ -253,6 +253,223 @@
     -moz-transition: background-color .1s linear,border-color .1s linear;
     transition: background-color .1s linear,border-color .1s linear
 }
+
+.btn_log_info.btn_tistory:hover {
+    color: #fff;
+    background-color: #f54;
+    border: 1px solid #f54;
+    text-decoration: none
+}
+
+.info_tistory .profile_tistory {
+    margin: 0 60px 0 0;
+    font-size: 0;
+    line-height: 0;
+    text-align: right
+}
+
+.info_tistory .link_alarm {
+    display: inline-block;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    margin: 37px 31px 0 0
+}
+
+.info_tistory .ico_alarm {
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin: 6px auto 0;
+    background-position: -50px -20px;
+    -webkit-transition: opacity .5s;
+    -moz-transition: opacity .5s;
+    transition: opacity .5s
+}
+
+.info_tistory .ico_alarm.ico_black {
+    position: absolute;
+    top: 0;
+    left: 6px;
+    background-position: -50px 0;
+    opacity: 0
+}
+
+.kakao_head.head_type1 .ico_alarm.ico_black {
+    opacity: 1
+}
+
+.link_profile,.thumb_profile {
+    display: block;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%
+}
+
+.info_tistory .link_profile {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    margin: 34px 0 0;
+    vertical-align: top
+}
+
+.thumb_profile {
+    overflow: hidden;
+    background-size: cover;
+    background-position: 50% 50%;
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,.1)
+}
+
+.header_layer {
+    position: absolute;
+    top: 84px;
+    right: 99px;
+    width: 400px;
+    border-radius: 3px;
+    background-color: #fff;
+    box-sizing: content-box;
+    box-shadow: 0 2px 5px rgba(0,0,0,.1),0 0 1px rgba(0,0,0,.3);
+    text-align: left
+}
+
+.layer_profile {
+    width: 282px;
+    right: 46px
+}
+
+.inner_header_layer .info_profile {
+    overflow: hidden;
+    position: relative;
+    padding: 18px 15px 21px 25px;
+    line-height: 1.5
+}
+
+.inner_header_layer .wrap_account {
+    overflow: hidden
+}
+
+.inner_header_layer .txt_id {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #000;
+    font-size: 16px;
+    line-height: 1.5;
+    white-space: nowrap;
+    font-weight: 600;
+}
+
+.inner_header_layer .info_profile .txt_id {
+    display: inline-block;
+    max-width: 164px
+}
+
+.inner_header_layer .txt_id_type2 {
+    font-family: "Noto Sans Medium", AppleSDGothicNeo-Regular, "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+}
+
+.inner_header_layer .txt_email {
+    display: block;
+    overflow: hidden;
+    width: 170px;
+    padding: 2px 0 0;
+    text-overflow: ellipsis;
+    color: #909090;
+    font-size: 12px;
+    line-height: 1.5;
+    white-space: nowrap;
+    font-weight: 600;
+}
+
+.inner_header_layer .link_setting {
+    position: absolute;
+    bottom: 22px;
+    right: 25px;
+    width: 14px;
+    height: 14px;
+    background-position: -70px -20px
+}
+
+.inner_header_layer .link_setting_type2 {
+    bottom: 20px;
+    width: inherit;
+    height: inherit;
+    font-size: 12px;
+    color: #909090;
+    font-weight: 600;
+}
+
+.inner_header_layer .wrap_list {
+    overflow-y: auto;
+    margin: 0;
+    padding: 6px 0;
+    border-top: 1px solid #f0f0f0
+}
+
+.inner_header_layer .tit_list_type {
+    padding: 20px 24px 6px 25px;
+    font-size: 11px;
+    color: #909090;
+    font-weight: 600;
+}
+
+.inner_header_layer .tit_list, .inner_header_layer .tit_list_type {
+    display: block;
+    line-height: 1.5;
+    font-family: "Noto Sans Medium", AppleSDGothicNeo-Regular, "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    font-weight: 400;
+}
+
+.inner_header_layer .info_profile_type1 {
+    padding: 3px 86px 8px 24px;
+    border-bottom: none
+}
+
+.inner_header_layer .info_profile_type1:last-child {
+    margin-bottom: 13px;
+}
+
+.inner_header_layer .info_profile_type1 .txt_id {
+    font-size: 14px
+}
+
+.inner_header_layer .link_edit {
+    position: absolute;
+    bottom: 10px;
+    right: 53px;
+    width: 13px;
+    height: 14px;
+    background-position: -70px 0
+}
+
+.inner_header_layer .info_profile_type1 .link_setting {
+    bottom: 10px
+}
+
+.inner_header_layer .btn_logout {
+    width: 100%;
+    height: 47px;
+    padding-left: 25px;
+    border-top: 1px solid #f0f0f0;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #909090;
+    text-align: left
+}
+
+.header_layer:after {
+    content: "";
+    position: absolute;
+    top: -8px;
+    right: 24px;
+    width: 16px;
+    height: 9px;
+    background-image: url(https://t1.daumcdn.net/tistory_admin/static/top/pcrtn/layer_edge.png);
+    background-size: 16px 9px
+}
 /* Navigation end*/
 
 /* KakaoContent start*/
