@@ -49,4 +49,10 @@ public class UserService {
 
         return userList;
     }
+
+    @Transactional
+       public boolean checkId(String account) {
+        return userRepository.existsByAccount(account);
+    }
+
 }

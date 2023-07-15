@@ -10,4 +10,5 @@ import java.util.function.Function;
 
 public interface UserRepository extends JpaRepository<UserEntity, Long> {
 
+    boolean existsByAccount(String account);
 }
