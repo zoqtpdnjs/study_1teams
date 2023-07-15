@@ -1,19 +1,18 @@
+import {Routes, Route} from 'react-router-dom';
 import 'css/user/Common.css';
 import 'css/user/App.css';
 import 'css/user/Top.css';
-import Navigation from 'components/user/Navigation'
-import KakaoContent from 'components/user/KakaoContent'
-import DaumFoot from 'components/user/DaumFoot'
+import LoginPage from 'components/user/LoginPage'
+import LogoutPage from 'components/user/LogoutPage'
+import KakaoWrap from 'components/user/KakaoWrap'
 
 function App() {
   return (
-      <div id="kakaoWrap" className="tistory_type1">
-        <Navigation />
-        <hr className="hide" />
-        <KakaoContent />
-        <hr className="hide" />
-        <DaumFoot />
-      </div>
+    <Routes>
+      <Route path="/" element={<KakaoWrap />} />
+      <Route path="/auth/login" element={<LoginPage />} />
+      <Route path="/oauth/logout" element={<LogoutPage />} />
+    </Routes>
   );
 }
 
