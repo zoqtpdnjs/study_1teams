@@ -24,6 +24,9 @@ dependencies {
 	implementation 'com.oracle.database.security:oraclepki'
 	implementation 'com.oracle.database.security:osdt_core'
 	implementation 'com.oracle.database.security:osdt_cert'
+
+	implementation group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1.1'
+
 }
 
 tasks.named('test') {

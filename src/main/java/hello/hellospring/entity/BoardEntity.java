@@ -10,7 +10,6 @@ import java.util.Date;
 
 @Getter
 @NoArgsConstructor
-@AllArgsConstructor
 @Entity
 @EntityListeners(AuditingEntityListener.class)
 @Table(name="st_board")
@@ -34,4 +33,22 @@ public class BoardEntity {
     private String allowCmt;
     private int likeCnt;
 
+    @Builder
+    public BoardEntity(String bkey, String blogkey, String ckey, String ukey,
+                       String subject, String content, String isnotice, int imageIdx,
+                       String status, Date regdate, Date updatedate, String allowCmt, int likeCnt){
+        this.bkey = bkey;
+        this.blogkey = blogkey;
+        this.ckey = ckey;
+        this.ukey = ukey;
+        this.subject = subject;
+        this.content = content;
+        this.isnotice = isnotice;
+        this.imageIdx = imageIdx;
+        this.status = status;
+        this.regdate = regdate;
+        this.updatedate = updatedate;
+        this.allowCmt = allowCmt;
+        this.likeCnt = likeCnt;
+    }
 }
