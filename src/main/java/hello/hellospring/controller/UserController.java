@@ -22,7 +22,11 @@ public class UserController {
     }
 
     @GetMapping("/getAllUser")
-    public List<User> getUser(User user){
+    public List<User> getUser(){
         return userService.getUserList();
+    }
+    @GetMapping("/checkId")
+    public boolean checkId(String account){
+        return userService.checkId(account);
     }
 }
