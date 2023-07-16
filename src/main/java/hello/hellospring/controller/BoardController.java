@@ -1,13 +1,12 @@
 package hello.hellospring.controller;
 
+import hello.hellospring.common.Constants;
 import hello.hellospring.domain.Board;
+import hello.hellospring.exception.CommonException;
 import hello.hellospring.service.BoardService;
-import lombok.AllArgsConstructor;
+import org.json.simple.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -19,10 +18,27 @@ public class BoardController {
     private BoardService boardService;
 
 
-    // 게시판 리스트
+    // 게시글 전체 리스트
     @GetMapping("/list")
     public List<Board> list(){
         return boardService.getBoardList();
     }
 
+    // 게시글 작성
+    @RequestMapping(value = "/insert", method = RequestMethod.POST)
+    public String insertBoard(@RequestBody Board board){
+        JSONObject json = new JSONObject();
+        int result = Constants.INSERT_FAILURE;
+        try {
+            boardService.insertBoard(board);
+            result = Constants.INSERT_SUCCESS;
+        } catch (CommonException e){
+            json.put("error", e.getErrorCode());
+        } catch (Exception e){
+            json.put("error", e.toString());
+        }
+        json.put("result", result);
+
+        return json.toString();
+    }
 }
