@@ -13,7 +13,6 @@ const Navigation = ({authenticate}) => {
 
     const [showProfileBox, setShowProfileBox] = useState(false);
     const showProfileBoxEvent = () => {
-        console.log(showProfileBox)
         setShowProfileBox(!showProfileBox);
     };
 
