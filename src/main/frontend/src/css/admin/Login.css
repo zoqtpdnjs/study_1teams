@@ -120,7 +120,6 @@ fieldset {
   background-position: 50% 0;
   background-size: cover;
   background-image: url(../../../public/bg_login_black_200910.png);
-  z-index: -90;
 }
 
 .content_login_type1 .inner_login {

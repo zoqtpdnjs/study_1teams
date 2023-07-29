@@ -55,4 +55,14 @@ public class UserService {
         return userRepository.existsByAccount(account);
     }
 
+    @Transactional
+    public boolean login(User user){
+        UserEntity findUser = userRepository.findByAccount(user.getAccount());
+
+        if(findUser == null) return false;
+
+        if(!findUser.getPasswd().equals(user.getPasswd())) return false;
+
+        return true;
+    }
 }

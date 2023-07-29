@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import 'css/user/Common.css';
 import 'css/user/App.css';
 import 'css/user/Top.css';
-import LoginPage from 'components/user/LoginPage'
+import LoginPage from 'components/user/Login'
 import LogoutPage from 'components/user/LogoutPage'
 import KakaoWrap from 'components/user/KakaoWrap'
 
